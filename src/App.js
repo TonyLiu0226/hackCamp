@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import LoginPage from './loginPage.js';
-
+import TestUser from './testDb.js';
+import Location from './locaiton.js'
 function App() {
 
   const [data, setData] = useState({});
@@ -27,6 +28,7 @@ function App() {
   return (
     <div>
       <LoginPage></LoginPage>
+      <Location></Location>
     </div>
   );
 }
