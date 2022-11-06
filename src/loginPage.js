@@ -3,8 +3,9 @@ import {useState, useEffect} from 'react';
 import './loginPage.css';
 import 'bulma/css/bulma.min.css';
 import ProfileCard from './profileCard.js'
+
 function loginPage(props) {
-    const login = (response) => {
+    const login = (response) => { 
         fetch("http://localhost:3001/login", {mode:'cors'}).then(function (response) {
             return response.json();
             })
@@ -24,3 +25,5 @@ function loginPage(props) {
 }
 
 export default loginPage;
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
