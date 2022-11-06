@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
+import LoginPage from './loginPage.js';
 
 function App() {
 
@@ -25,12 +26,7 @@ function App() {
 
   return (
     <div>
-      {(typeof data.users === 'undefined') ?
-      (<p>Loading...</p>): (
-        data.users.map((user, i) => (
-          <p key={i}>({user})</p>
-        ))
-      ) }
+      <LoginPage></LoginPage>
     </div>
   );
 }
