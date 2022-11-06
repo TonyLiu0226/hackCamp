@@ -37,7 +37,7 @@ const Location = () => {
             case error.TIMEOUT:
             lat = setLat("User denied the request for Geolocation.");
             long = setLong(null);
-            break;
+            break; 
           case error.UNKNOWN_ERROR:
             lat = setLat("User denied the request for Geolocation.");
             long = setLong(null);
